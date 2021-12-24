@@ -1,0 +1,24 @@
+# ConvertToAtlasCopcoString
+Method ConvertToAtlasCopcoString returns "ERROR:)" when passing 87 as parameter. 
+Expected result is "Atlas" since 87 is divisible by 3. And the method doesn't return Atlas
+
+Error:
+ self.assertEqual(obj.ConvertToAtlasCopcoString(87),'Atlas')
+AssertionError: 'ERROR:)' != 'Atlas'
+
+
+# FindMax
+This method returns 7 as the maximum between [1,5,-7] (should be 5 instead)
+it captures the maximum after removing negative sign which is wrong!
+
+Error:
+ self.assertEqual(obj.FindMax([1,5,-7]),5)
+AssertionError: 7 != 5
+
+
+
+
+
+
+
+
